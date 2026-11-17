@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios de JavaScript</title>
+</head>
+<body>
+
+    <h1>Exercício 1 - Expressões matemáticas</h1>
+
+    <script>
+        document.write("<h3>1) 10 + 19 + 8 * 4</h3>");
+        document.write("Primeiro será feita a multiplicação.<br>");
+        document.write("Resultado: " + (10 + 19 + 8 * 4));
+
+        document.write("<h3>2) (10 / 2) * 4</h3>");
+        document.write("Primeiro será feita a divisão.<br>");
+        document.write("Resultado: " + ((10 / 2) * 4));
+
+        document.write("<h3>3) (2 ** 3 + 1)</h3>");
+        document.write("Primeiro será feita a potenciação.<br>");
+        document.write("Resultado: " + (2 ** 3 + 1));
+
+        document.write("<h3>4) 17 % 5</h3>");
+        document.write("O operador % calcula o resto da divisão.<br>");
+        document.write("Resultado: " + (17 % 5));
+
+        document.write("<h3>5) 20 % 4</h3>");
+        document.write(" A divisão é exata, então o resto é zero.<br>");
+        document.write("Resultado: " + (20 % 4));
+
+
+        document.write("<h1>Exercício 2 - Operações lógicas</h1>");
+
+        document.write("<h3>a) 90 > 10</h3>");
+        document.write("Previsão: Verdadeiro.<br>");
+        document.write("Resultado: " + (90 > 10));
+
+        document.write("<h3>b) 10 == '10'</h3>");
+        document.write("Previsão: Verdadeiro, pois os valores são iguais.<br>");
+        document.write("Resultado: " + (10 == '10'));
+
+        document.write("<h3>c) 10 !== 10</h3>");
+        document.write("Previsão: Falso, pois os valores e tipos são iguais.<br>");
+        document.write("Resultado: " + (10 !== 10));
+
+        document.write("<h3>d) 'ifpr' === 'IFPR'</h3>");
+        document.write("Previsão: Falso, pois existem letras maiúsculas e minúsculas.<br>");
+        document.write("Resultado: " + ('ifpr' === 'IFPR'));
+
+        document.write("<h3>e) 5 >= 5 && 3 > 4</h3>");
+        document.write("Previsão: Falso, pois uma das condições é falsa.<br>");
+        document.write("Resultado: " + (5 >= 5 && 3 > 4));
+
+        document.write("<h3>f) 5 >= 5 || 3 > 4</h3>");
+        document.write("Previsão: Verdadeiro, pois uma das condições é verdadeira.<br>");
+        document.write("Resultado: " + (5 >= 5 || 3 > 4));
+
+        document.write("<h3>g) !(5 >= 5)</h3>");
+        document.write("Previsão: Falso, pois o operador ! inverte o resultado.<br>");
+        document.write("Resultado: " + (!(5 >= 5)));
+    </script>
+ <title>Exercícios 3 e 4</title>
+</head>
+<body>
+
+    <h1>Exercício 3 - Ano Bissexto</h1>
+
+    <script>
+        // Exercício 3
+        let ano = Number(prompt("Digite um ano:"));
+
+        let bissexto = (ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0;
+
+        if (bissexto) {
+            document.write("<p>" + ano + " é um ano bissexto!</p>");
+        } else {
+            document.write("<p>" + ano + " não é um ano bissexto.</p>");
+        }
+
+
+        // Exercício 4
+        document.write("<h1>Exercício 4 - Média de Notas</h1>");
+
+        let nota1 = Number(prompt("Digite a primeira nota:"));
+        let nota2 = Number(prompt("Digite a segunda nota:"));
+        let nota3 = Number(prompt("Digite a terceira nota:"));
+
+        let media = (nota1 + nota2 + nota3) / 3;
+
+        document.write("<p>A média das notas é: " + media.toFixed(1) + "</p>");
+
+    </script>
+</body>
+</html>
